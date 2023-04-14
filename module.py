@@ -1,15 +1,35 @@
 class parking_gargage():
-    tickets_avail = []
-    parking_spaces = []
+    tickets_avail = [1011, 1012, 1013, 1014, 1015,
+                     1016, 1017, 1018, 1019, 1020, 1021, 1022]
+    parking_spaces = [5, 7, 10, 21, 22, 46, 56, 72, 73, 74, 76, 81]
     current_ticket = {}
+    taken_spaces = {}
 
-    def process(self):
+    def main_menu(self):
         pass
         # ARRIVAL / TAKING TICKET
         # user arrives, gets prompt to take ticket, pay ticket, or cancel
-        # -- if user takes ticket, continue to take_tickets method
-        # -- if user decides to cancel, then end loop
-        #
+        parking = True
+        while True:
+            print('***** Welcome to the RC Parking Garage! *****\n')
+            print(
+                f'* There are currently {len(self.parking_spaces)} available *\n')
+            response = input(
+                'Select: Take Ticket | Pay Ticket | Cancel ?\n').lower()
+
+            if response == 'take' or 'take ticket':
+                self.take_ticket()
+
+            elif response == 'pay' or 'pay ticket':
+                self.pay_for_parking()
+
+            elif response == 'cancel' or 'quit':
+                self.show()
+                parking = False
+
+            else:
+                print('Please choose from the list of options:\n')
+
         # PAYING FOR TICKET
         # user gets prompted to pay for ticket (maybe by ticket number?)
         # -- user input to type ticket number
@@ -23,7 +43,6 @@ class parking_gargage():
     def take_ticket(self):
         pass
         # - This should decrease the amount of tickets_avail available by 1
-        # --- (maybe add randomizer to issue a ticket number?)
         # --- (maybe add a timer to calculate total that stops when they leave)
         # - This should decrease the amount of parking_spaces available by 1
         # - Print a statement thanking the user and telling them their car will be safe with us

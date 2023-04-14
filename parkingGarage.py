@@ -1,5 +1,5 @@
 # Start Your Code here
-import module
+# import module
 
 
 class parking_gargage():
@@ -7,6 +7,7 @@ class parking_gargage():
                      1016, 1017, 1018, 1019, 1020, 1021, 1022]
     parking_spaces = [5, 7, 10, 21, 22, 46, 56, 72, 73, 74, 76, 81]
     current_ticket = {}
+    taken_spaces = {}
 
     def main_menu(self):
         pass
@@ -46,7 +47,6 @@ class parking_gargage():
     def take_ticket(self):
         pass
         # - This should decrease the amount of tickets_avail available by 1
-        # --- (maybe add randomizer to issue a ticket number?)
         # --- (maybe add a timer to calculate total that stops when they leave)
         # - This should decrease the amount of parking_spaces available by 1
         # - Print a statement thanking the user and telling them their car will be safe with us

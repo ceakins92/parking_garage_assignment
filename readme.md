@@ -43,4 +43,10 @@ When the project is completed, commit the final changes, sync all pull requests,
 
 ###### List group responsiblities below:
 
+Originator:
+
+Collabrator:
+
 ###### Provide name and approxamite line numbers where each person wrote their code
+
+Lines: 1-34 Chris
