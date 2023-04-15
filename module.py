@@ -72,4 +72,4 @@ class parking_gargage():
             self.leave_garage()
 
     def leave_garage(self):
-        print('Have a nice day! :\)')
+        print('Have a nice day! :)')
